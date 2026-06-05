@@ -99,7 +99,7 @@ impl Opcode {
 }
 
 // TODO: Add necessary derive traits
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq,Clone)]
 pub struct UTXO {
     pub txid: Vec<u8>,
     pub vout: u32,
